@@ -16,9 +16,11 @@ button.addEventListener('click', function(){
         container2.style.gridTemplateColumns='70% 30%';
     }
 })
-cells.forEach(cell => {
-    const button = document.createElement('button');
-    button.textContent = 'Add to Cart';
-    cell.appendChild(button);
+  const listItems = document.querySelectorAll('li');
+
+  listItems.forEach(function(listItem) {
+    listItem.onmouseover = function() {
+      console.log('Ciao');
+    };
   });
 
