@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <div>
-        <header>
-          <div class="container">
-            <div class="name">
-              <p1 >China Luxury</p1>
-            </div>
-            </div>
-            <div class="search-bar">
-              <input type="text" >
-              <label for="" class="search">Search</label>
-            </div>   
-        </header>
-        <div>
-          <nav class="navbar">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <button class="button"></button>
-          </nav>
-        </div>
-        <div class="container2">
-          <div class="catalog">
-            <table id="table">
-              <tr class="column1">
-                <td>Cella 1</td>
-                <td>Cella 2</td>
-                <td>Cella 3</td>
-              </tr>
-            </table>
-          </div>
-          <div class="cart">
-            <h2>Carrello</h2>
-            <ul id="listCart">
-              <li>Articolo 1</li>
-              <li>Articolo 2</li>
-              <li>Articolo 3</li>
-            </ul>
-          </div>
+  <div>
+    <header>
+      <div class="container">
+        <div class="name">
+          <p1>China Luxury</p1>
         </div>
       </div>
-      <script src="script.js"></script>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" id="search">
+      </div>
+    </header>
+    <div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="button"></button>
+      </nav>
+    </div>
+    <div class="container2">
+      <div class="catalog" id="product">
+        <table id="table" >
+          <tr class="column1">
+            <td>Cella 1</td>
+            <td>Cella 2</td>
+            <td>Cella 3</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="cart" id="cart" >
+        <h2>Carrello</h2>
+        <ul id="cart-items">
+          <li>Articolo 1</li>
+          <li>Articolo 2</li>
+          <li>Articolo 3</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
