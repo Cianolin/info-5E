@@ -72,11 +72,13 @@ label {
 }
 
 .catalog {
+  overflow-y: auto;
   grid-column: 1;
   display: block;
 }
 
 .cart {
+  overflow-y: auto;
   grid-column: 2;
   border: 2px solid #000;
   opacity: 100;
@@ -88,10 +90,6 @@ td {
   position: relative;
 }
 
-td:hover button {
-  display: block;
-}
-
 .button {
   margin-left: auto;
   width: 50px;
@@ -101,4 +99,13 @@ td:hover button {
 li {
   width: 50px;
   cursor: pointer;
+}
+
+.total-cart {
+  position: fixed;
+  margin-bottom: auto;
+  background-color: #555;
+  width: 100%;
+  bottom: 0;
+
 }
