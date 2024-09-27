@@ -37,15 +37,9 @@ listTd.forEach(td => {
   });
 });
 document.addEventListener('click', (event) => {
-  // Check if the clicked element is the currently selected td element
   if (event.target === selectedTd) {
-    // Code to be executed when the selected td is clicked
     console.log('Selected TD clicked!');
     const li = document.createElement('li')
   listCart.appendChild(li);
   }
 });
-/*td => {td.addEventListener('click', liCart(td.textContent));}
-function liCart(text) {
-  
-}*/
