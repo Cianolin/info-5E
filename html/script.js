@@ -8,6 +8,7 @@ const listItems = document.querySelectorAll('li');
 const listTd = document.querySelectorAll('td');
 const search = document.querySelector('#search');
 let selectedTd = null;
+let selectedText= null;
 let buttonCart = 0;
 button.addEventListener('click', function () {
   buttonCart++;
@@ -34,12 +35,14 @@ search.addEventListener('blur', () => {
 listTd.forEach(td => {
   td.addEventListener('click', () => {
     selectedTd = td;
+    selectedText= td.textContent;
   });
 });
 document.addEventListener('click', (event) => {
   if (event.target === selectedTd) {
     console.log('Selected TD clicked!');
     const li = document.createElement('li')
+    li.textContent= selectedText;
   listCart.appendChild(li);
   }
 });
