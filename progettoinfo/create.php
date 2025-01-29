@@ -1,10 +1,11 @@
 <?php
 //$content='dati provenienti dal database';
-$titolo=$_POST['titolo'];
-$autore=$_POST['autore'];
-$genere=$_POST['genere'];
-$prezzo=$_POST['prezzo'];
-$anno_pubblicazione=$_POST['anno_pubblicazione'];
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $titolo = $_POST['titolo'];
+    $autore = $_POST['autore'];
+    $genere = $_POST['genere'];
+    $prezzo = $_POST['prezzo'];
+    $anno_pubblicazione = $_POST['anno_pubblicazione'];
 
 
 
@@ -40,21 +41,29 @@ $stm->bindValue(':autore',$autore);
 $stm->bindValue(':genere',$genere);
 $stm->bindValue(':prezzo',$prezzo);
 $stm->bindValue(':anno_pubblicazione',$anno_pubblicazione);
-
-
-
+}
 require 'header.php';
-
 ?>
-    <div>
-        <form action="action_page.php" method="post">
-            Titolo: <input type="text" name="titolo"required><br>
-            Autore: <input type="text" name="autore"required><br>
-            Genere: <input type="text" name="genere"required><br>
-            Prezzo: <input type="text" name="prezzo"required><br>
-            Anno pubblicazione: <input type="text" name="anno_pubblicazione"required><br>
-        </form>
-        <button>Carica</button>
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col">
+            </div>
+            <div class="col ct_create">
+                <form method="post">
+                    <p>Titolo<input type="text" name="titolo" id="titolo" required></p><br>
+                    Autore: <input type="text" name="autore" id="autore" required><br>
+                    Genere: <input type="text" name="genere" id="genere" required><br>
+                    Prezzo: <input type="text" name="prezzo" id="prezzo"><br>
+                    Anno pubblicazione: <input type="text" name="anno_pubblicazione" id="anno_pubblicazione" required><br>
+                </form>
+                <button>Carica</button>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
     </div>
 <?php
 require 'footer.php';

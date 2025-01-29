@@ -35,3 +35,14 @@ nav .img_libro {
 .carousel-control-next {
     right: 10px; /* Distanza dal bordo destro della pagina */
 }
+.ct_create{
+    background: #45a049;
+    border-radius: 20px;
+    height: fit-content;
+    width: max-content;
+    padding:20px
+}
+/*.ct_create p{
+    transform: translateX(-50%);
+    background-color: transparent;
+}*/
