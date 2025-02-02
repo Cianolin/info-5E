@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav .img_libro {
+    width: 30%;
+    height: 30%;
+    padding-left: 10px;
+}
+
+.carousel-inner.fixed-size {
+    height: 30vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: fixed;
+    top: 20%;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Stili per il form */
+.ct_create {
+    background: #45a049;
+    border: 10px;
+    max-width: 400px;
+    border-radius: 20px;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+}
+.ct_create form{
+    margin-left: 40px;
+}
+.ct_create label {
+    width: 150px;
+    font-size: 20px;
+}
+
+
+.ct_create input {
+    flex: 1;
+    border-radius: 20px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.ct_create button {
+    margin-top: 20px;
+    justify-self: center;
+    width: 50%;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #45a049;
+}
+.container_confim{
+    background: #45a049;
+    border: 10px;
+    max-width: 400px;
+    border-radius: 20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    flex-direction: column;
+    font-size: 20px;
+}
+.container_confim button{
+    align-items: center;
+    border-radius: 10px;
+    height: 35px;
+    width: 70px;
+}
