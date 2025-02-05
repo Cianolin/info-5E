@@ -6,26 +6,25 @@ NOTA: lo schema concettuale deve essere realizzato con DRAWIO (drawio.com); come
 
 CREATE DATABASE campionato;
 CREATE TABLE campionato.casa_automobilistica(
-nome varchar(30) PRIMARY KEY,
+nome varchar(30) PRIMARY KEY unique NOT null,
 colore_livrea varchar(20)
 );
 CREATE TABLE campionato.pilota(
 nome varchar(20),
 cognome varchar(20),
 nazionalita varchar(30),
-numero int PRIMARY KEY,
+numero int PRIMARY KEY UNIQUE NOT null,
 nome_casa varchar(20),
 foreign key (nome_casa) references campionato.casa_automobilistica(nome) 
 );
 CREATE TABLE campionato.gara(
-circuito varchar(20),
+circuito varchar(20) ,
 data_gara date,
 CONSTRAINT pk_gara PRIMARY KEY (circuito, data_gara)
 );
 CREATE TABLE campionato.gareggia(
 n_pilota int,
 punteggio int,
-tempo time,
 circuito varchar(20),
 data_gara date,
 CONSTRAINT pk_gareggia PRIMARY key(data_gara,circuito,n_pilota),
