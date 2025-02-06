@@ -9,27 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-success ">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="home.php"><img src="imglibri/libro.png" alt="image logo" class="img_libro">LIBRERIA</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="create.php">Create</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="delete.php">Delete</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="update.php">Update</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="read.php">Read</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<div>
+    <ul class="nav justify-content-center bg-danger">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="classifica.php">Classifica</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+    </ul>
+</div>
