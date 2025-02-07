@@ -2,10 +2,8 @@
 $title = 'Classifica';
 require 'header.php';
 require 'DBcon.php';
-require 'classifiche.php';
 $config = require 'database.php';
 $db = Dbcon::getDb($config);
-$content=Piloti($db);
 ?>
 <div>
     <div>
@@ -14,7 +12,6 @@ $content=Piloti($db);
                 <a class="nav-link active" aria-current="page" href="#">Gare</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?=$content=Piloti($db)?>">Piloti</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Squadre</a>
