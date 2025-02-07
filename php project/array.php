@@ -70,5 +70,4 @@ print_r($assoc_array);
 
 // krsort()
 krsort($assoc_array);
-print_r($assoc_array);
-
+print_r($assoc_array); 
