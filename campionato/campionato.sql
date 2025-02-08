@@ -50,16 +50,16 @@ INSERT INTO campionato.gara (circuito, data_gara) VALUES
 ('Monza', '2025-03-20'),
 ('Silverstone', '2025-04-10'),
 ('Spa', '2025-05-15');
-INSERT INTO campionato.gareggia (n_pilota, punteggio, circuito, data_gara) VALUES
-(16, 25, 'Monza', '2025-03-20'),
-(55, 18, 'Monza', '2025-03-20'),
-(44, 15, 'Monza', '2025-03-20'),
-(63, 10, 'Monza', '2025-03-20'),
-(1, 25, 'Silverstone', '2025-04-10'),
-(11, 18, 'Silverstone', '2025-04-10'),
-(44, 15, 'Silverstone', '2025-04-10'),
-(3, 12, 'Silverstone', '2025-04-10'),
-(1, 25, 'Spa', '2025-05-15'),
-(11, 18, 'Spa', '2025-05-15'),
-(16, 15, 'Spa', '2025-05-15'),
-(55, 12, 'Spa', '2025-05-15');
+INSERT INTO campionato.gareggia (n_pilota, punteggio, tempo_migliore, circuito, data_gara) VALUES
+(16, 25, '01:30:00', 'Monza', '2025-03-20'),
+(55, 18, '01:31:00', 'Monza', '2025-03-20'),
+(44, 15, '01:32:00', 'Monza', '2025-03-20'),
+(63, 10, '01:33:00', 'Monza', '2025-03-20'),
+(1, 25, '01:29:00', 'Silverstone', '2025-04-10'),
+(11, 18, '01:30:00', 'Silverstone', '2025-04-10'),
+(44, 15, '01:31:00', 'Silverstone', '2025-04-10'),
+(3, 12, '01:32:00', 'Silverstone', '2025-04-10'),
+(1, 25, '01:28:00', 'Spa', '2025-05-15'),
+(11, 18, '01:29:00', 'Spa', '2025-05-15'),
+(16, 15, '01:30:00', 'Spa', '2025-05-15'),
+(55, 12, '01:31:00', 'Spa', '2025-05-15');

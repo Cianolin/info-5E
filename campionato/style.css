@@ -1,0 +1,49 @@
+body{
+    background-color: #E9E9E9;
+}
+ul{
+    background-color: #d5090c;
+}
+.ct_create {
+    background: whitesmoke;
+    border: 10px;
+    max-width: 400px;
+    border-radius: 20px;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+}
+.ct_create form{
+    margin-left: 40px;
+}
+.ct_create label {
+    width: 150px;
+    font-size: 20px;
+}
+.ct_create input {
+    flex: 1;
+    border-radius: 20px;
+    height: 30px;
+    padding-left: 10px;
+}
+.ct_create button {
+    margin-top: 20px;
+    justify-self: center;
+    width: 50%;
+    height: 45px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: white;
+    color: #d5090c;
+}
+footer{
+    background-color: rgba(46,27,32,0.22)   ;
+}

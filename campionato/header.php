@@ -10,15 +10,21 @@
 </head>
 <body>
 <div>
-    <ul class="nav justify-content-center bg-danger">
+    <ul class="nav justify-content-center fs-5">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="create.php">Inserimento</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="tabelle-classifiche/classifica.php">Classifica</a>
+            <a class="nav-link" href="update.php">Modifica</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="delete.php">Elimina</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="classifica-gara.php">Classifica</a>
         </li>
         <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>

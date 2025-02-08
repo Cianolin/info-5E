@@ -1,22 +1,18 @@
 <?php
 $title = 'Classifica';
 require 'header.php';
-require 'DBcon.php';
-$config = require 'database.php';
-$db = Dbcon::getDb($config);
-
 ?>
 <div>
     <div>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Gare</a>
+                <a class="nav-link active"href="gare.php">Gare</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="classifica-pilota.php">Piloti</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Squadre</a>
+                <a class="nav-link" href="classifica-squadre.php">Squadre</a>
             </li>
         </ul>
     </div>
@@ -27,4 +23,3 @@ $db = Dbcon::getDb($config);
 
         <div class="table-responsive mt-4">
             <table class="table table-striped table-bordered text-center">
-

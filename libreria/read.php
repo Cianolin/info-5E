@@ -13,7 +13,7 @@ try {
         echo "<td>" . htmlspecialchars($libro->titolo) . "</td>";
         echo "<td>" . htmlspecialchars($libro->autore) . "</td>";
         echo "<td>" . htmlspecialchars($libro->genere) . "</td>";
-        echo "<td>€" . number_format($libro->prezzo, 2, ',', '.') . "</td>";
+        echo "<td>" . number_format($libro->prezzo, 2, ',', '.') . "</td>";
         echo "<td>" . htmlspecialchars($libro->anno_pubblicazione) . "</td>";
         echo "</tr>";
     }

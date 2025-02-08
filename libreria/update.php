@@ -1,8 +1,12 @@
 <?php
 //$content='dati provenienti dal database';
-require 'db.php';
 require 'header.php';
+require 'DBcon.php';
+$config = require 'database.php';
+$db = Dbcon::getDb($config);
+
 $title='Update';
+$db=Db::getDb($config);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $titolo = $_POST['titolo'];
     $prezzo = $_POST['prezzo'];
