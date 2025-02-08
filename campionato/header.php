@@ -18,7 +18,7 @@
             <a class="nav-link" href="#">Link</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="classifica.php">Classifica</a>
+            <a class="nav-link" href="tabelle-classifiche/classifica.php">Classifica</a>
         </li>
         <li class="nav-item">
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>

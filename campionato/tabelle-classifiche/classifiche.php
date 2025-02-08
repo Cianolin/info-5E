@@ -24,7 +24,6 @@ function Piloti($db)
     try {
         $stm = $db->prepare($query);
         $stm->execute();
-
         // Controlla se ci sono risultati
         if ($stm->rowCount() > 0) {
             ob_start();
