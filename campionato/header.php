@@ -12,22 +12,26 @@
 <div>
     <ul class="nav justify-content-center fs-5">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link active" href="index.php">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Aggiungi
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="insert/create-squadra.php">Squadre</a></li>
+                <li><a class="dropdown-item" href="insert/create_pilota.php">Piloti</a></li>
+                <li><a class="dropdown-item" href="insert/create-gara.php">Gara</a></li>
+            </ul>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="create.php">Inserimento</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="update.php">Modifica</a>
+            <a class="nav-link" href="update/update-squadra.php">Modifica</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="delete.php">Elimina</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="classifica-gara.php">Classifica</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="gare.php">Classifica</a>
         </li>
     </ul>
 </div>

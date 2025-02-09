@@ -1,12 +1,12 @@
 <?php
 $title = 'Classifica';
-require 'header.php';
+require '../header.php';
 ?>
 <div>
     <div>
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link active"href="gare.php">Gare</a>
+                <a class="nav-link active"href="../gare.php">Gare</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="classifica-pilota.php">Piloti</a>

@@ -1,7 +1,7 @@
 <?php
 require 'classifica.php';
-require 'DBcon.php';
-$config = require 'database.php';
+require '../DBcon.php';
+$config = require '../database.php';
 $db = Dbcon::getDb($config);
     $query = '
     SELECT

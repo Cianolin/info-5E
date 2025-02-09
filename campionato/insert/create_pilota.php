@@ -1,7 +1,7 @@
 <?php
-require 'header.php';
-require 'DBcon.php';
-$config = require 'database.php';
+require '../header.php';
+require '../DBcon.php';
+$config = require '../database.php';
 $db = Dbcon::getDb($config);
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 <div class="container">
     <div class="ct_create">
-        <form method="post" action="create.php">
+        <form method="post" action="create_pilota.php">
             <h1>Create</h1>
             <div>
                 <label for="nome">Nome:</label>
