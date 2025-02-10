@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stm->bindParam(':circuito', $circuito, PDO::PARAM_STR);
         $stm->bindParam(':data_gara', $data_gara, PDO::PARAM_STR);
         $stm->bindParam(':punteggio', $punteggio, PDO::PARAM_INT);
-        $stm->bindParam(':tempo_migliore', $tempo_migliore, PDO::PARAM_STR);
+        $stm->bindParam(':tempo_migliore', '00:'.$tempo_migliore, PDO::PARAM_STR);
         $stm->execute();
         echo "Record updated successfully";
     } catch (Exception $e) {
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <div>
                 <label for="tempo_migliore">Tempo Migliore:</label>
-                <input type="text" name="tempo_migliore" id="tempo_migliore" required>
+                <input type="text" pattern="[0-5][0-9]:[0-5][0-9]\.?([0-9]){0-3}"  name="tempo_migliore" id="tempo_migliore" required>
             </div>
             <button class="fs-5" type="submit">Aggiorna</button>
         </form>
