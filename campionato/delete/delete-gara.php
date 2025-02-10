@@ -1,49 +1,42 @@
 <?php
-require '../DBcon.php'; // Include the database connection file
-$config = require '../database.php'; // Load the database configuration
-$db = Dbcon::getDb($config); // Get the database connection
+require '../header.php';
+require '../DBcon.php';
+$config = require '../database.php';
+$db = Dbcon::getDb($config);
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['circuito']) && isset($_POST['data_gara'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $circuito = $_POST['circuito'];
-    $data_gara = $_POST['data_gara'];
-
-    $query = 'DELETE FROM campionato.gara WHERE circuito = :circuito AND data_gara = :data_gara';
+    $nuova_data = $_POST['nuova_data'];
+    $query = '
+    UPDATE campionato.gara
+    SET data_gara = :nuova_data
+    WHERE circuito = :circuito
+';
     try {
-        $stm = $db->prepare($query); // Prepare the SQL statement
-        $stm->bindParam(':circuito', $circuito, PDO::PARAM_STR); // Bind the circuito parameter
-        $stm->bindParam(':data_gara', $data_gara, PDO::PARAM_STR); // Bind the data_gara parameter
-        $stm->execute(); // Execute the SQL statement
-
-        if ($stm->rowCount() > 0) {
-            $message = "Gara eliminata con successo.";
-        } else {
-            $message = "Nessuna gara trovata con il circuito e la data specificati.";
-        }
+        $stm = $db->prepare($query);
+        $stm->bindParam(':circuito', $circuito, PDO::PARAM_STR);
+        $stm->bindParam(':nuova_data', $nuova_data, PDO::PARAM_STR);
+        $stm->execute();
+        echo "Record updated successfully";
     } catch (Exception $e) {
-        $message = "Errore durante l'eliminazione della gara: " . $e->getMessage();
+        echo "Error updating record: " . $e->getMessage();
     }
-} else {
-    $message = "Circuito o data gara non specificati.";
 }
 ?>
-
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <title>Elimina Gara</title>
-</head>
-<body>
-    <h1>Elimina Gara</h1>
-    <form method="post" action="">
-        <label for="circuito">Circuito:</label>
-        <input type="text" id="circuito" name="circuito" required>
-        <label for="data_gara">Data Gara:</label>
-        <input type="date" id="data_gara" name="data_gara" required>
-        <button type="submit">Elimina</button>
-    </form>
-    <?php if (isset($message)): ?>
-        <p><?= htmlspecialchars($message) ?></p>
-    <?php endif; ?>
-</body>
-</html>
+<div class="container">
+    <div class="ct_update">
+        <form method="post" action="update_gara.php">
+            <h1>Update Gara</h1>
+            <div>
+                <label for="circuito">Circuito:</label>
+                <input type="text" name="circuito" id="circuito" required>
+            </div>
+            <div>
+                <label for="nuova_data">Nuova Data:</label>
+                <input type="date" name="nuova_data" id="nuova_data" required>
+            </div>
+            <button class="fs-5" type="submit">Aggiorna</button>
+        </form>
+    </div>
+</div>
+<?php require 'footer.php'; ?>

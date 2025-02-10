@@ -19,13 +19,22 @@
                 Aggiungi
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="insert/create-squadra.php">Squadre</a></li>
-                <li><a class="dropdown-item" href="insert/create_pilota.php">Piloti</a></li>
-                <li><a class="dropdown-item" href="insert/create-gara.php">Gara</a></li>
+                <li><a class="dropdown-item" href="create/create-squadra.php">Squadre</a></li>
+                <li><a class="dropdown-item" href="create/create_pilota.php">Piloti</a></li>
+                <li><a class="dropdown-item" href="create/create-gara.php">Gara</a></li>
             </ul>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="update/update-squadra.php">Modifica</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Modifica
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="update/update-gare.php">Gara</a></li>
+                <li><a class="dropdown-item" href="update/update-piloti.php">Pilota</a></li>
+                <li><a class="dropdown-item" href="update/update-squadra.php">Squadra</a></li>
+                <li><a class="dropdown-item" href="update/update-gareggia.php">Partecipanti</a></li>
+
+            </ul>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="delete.php">Elimina</a>
