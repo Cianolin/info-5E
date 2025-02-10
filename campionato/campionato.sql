@@ -25,7 +25,7 @@ CONSTRAINT pk_gara PRIMARY KEY (circuito, data_gara)
 CREATE TABLE campionato.gareggia(
 n_pilota int,
 punteggio int,
-tempo_migliore time,
+tempo_migliore time(3),
 circuito varchar(20),
 data_gara date,
 CONSTRAINT pk_gareggia PRIMARY key(data_gara,circuito,n_pilota),
